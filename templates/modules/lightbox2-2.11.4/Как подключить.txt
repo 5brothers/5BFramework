@@ -1,0 +1,10 @@
+--- В HEAD (работает с Jq не ниже 1.11.0):
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="templates/css/lightbox.css">
+<script src="templates/js/lightbox.min.js"></script>
+
+--- в HTML
+
+Увеличивающим ссылкам добавить data-lightbox="roadtrip" 
