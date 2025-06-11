@@ -1,0 +1,148 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  font-size: var(--fontSizeRoot);
+  font-family: var(--fontRoot), sans-serif;
+  font-weight: 400;
+  margin: 0;
+  color: #494949;
+  position: relative;
+  background: #f7f7f7;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* img tag style */
+img {
+  display: block;
+  max-width: 100%;
+  border: none;
+}
+
+/* a tag style */
+a {
+  color: var(--colorRoot);
+  transition: var(--transit);
+
+  &:hover {
+    color: var(--colorRootHov);
+    transition: var(--transit);
+  }
+}
+
+/* titles style */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6
+ {
+  line-height: 120%;
+}
+
+h1,
+.h1 {
+  font-size: 3.2rem;
+  margin: 0 0 3rem;
+}
+
+h2,
+.h2 {
+  font-size: 3rem;
+  margin: 1rem 0 2.8rem;
+}
+
+h3,
+.h3 {
+  font-size: 2.6rem;
+  margin: 1rem 0 2.6rem;
+}
+
+h4,
+.h4 {
+  font-size: 2.4rem;
+  margin: 1rem 0 2.4rem;
+}
+
+h5,
+.h5 {
+  font-size: 2.2rem;
+  margin: 1rem 0 2.2rem;
+}
+
+h6,
+.h6 {
+  font-size: 2rem;
+  margin: 1rem 0 2rem;
+}
+
+/* p tag style */
+p {
+  margin: 15px 0;
+  line-height: 120%;
+}
+
+/* blockquote tag style */
+blockquote {
+  padding: 10px;
+}
+
+/* ul li tag style */
+ul, ol {
+  li {
+    margin: 0 0 2rem 0;
+  }
+}
+
+/*Table*/
+table {
+  border-collapse: collapse;
+  border: 1px solid #333;
+  thead tr,
+  thead:hover tr {
+    background: var(--colorRoot);
+    color: #fff;
+  }
+
+  tfoot tr,
+  tfoot:hover tr {
+    background: #333;
+    color: #fff;
+  }
+
+  tr {
+    transition: 0.2s;
+
+    &:hover {
+      background: #c7c7c7;
+      transition: 0.2s;
+    }
+
+    td {
+      border-bottom: 1px solid #999;
+      padding: 5px 10px;
+    }
+
+    &:last-of-type td {
+      border-bottom: none;
+    }
+  }
+}
