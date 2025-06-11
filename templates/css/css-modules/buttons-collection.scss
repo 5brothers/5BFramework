@@ -29,9 +29,23 @@
   }
 }
 
+/*Root Color Button*/
+.root-btn {
+  background: var(--colorRoot);
+  &.init-btn {
+    &:hover {
+      color: #fff;
+      background: var(--colorRootHov);
+    }
+  }
+  &.t {
+    color: var(--colorRoot);
+  }
+}
+
 /*Blue Button*/
 .blue-btn {
-  background: var(--colorRoot);
+  background: hsl(216, 100%, 48%);
   &.init-btn {
     &:hover {
       color: #fff;
@@ -39,7 +53,7 @@
     }
   }
   &.t {
-    color: rgba(116, 143, 200, 1);
+    color: hsl(216, 100%, 48%);
   }
 }
 

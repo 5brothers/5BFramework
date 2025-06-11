@@ -28,16 +28,28 @@
   transition: 0.2s;
 }
 
+/*Root Color Button*/
+.root-btn {
+  background: var(--colorRoot);
+}
+.root-btn.init-btn:hover {
+  color: #fff;
+  background: var(--colorRootHov);
+}
+.root-btn.t {
+  color: var(--colorRoot);
+}
+
 /*Blue Button*/
 .blue-btn {
-  background: var(--colorRoot);
+  background: hsl(216, 100%, 48%);
 }
 .blue-btn.init-btn:hover {
   color: #fff;
   background: hsl(216, 100%, 53%);
 }
 .blue-btn.t {
-  color: rgb(116, 143, 200);
+  color: hsl(216, 100%, 48%);
 }
 
 /*White Button*/
