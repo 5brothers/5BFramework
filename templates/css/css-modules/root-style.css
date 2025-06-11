@@ -1,0 +1,11 @@
+:root {
+  --fontRoot: "Comissioner";
+  --fontSizeRoot: 1.7rem;
+  --colorRoot: hsl(216, 100%, 63%);
+  --colorRootHov: hsl(216, 100%, 43%);
+  --inputPadding: 15px;
+  --transit: 0.2s;
+  --rootBdrs: 5px;
+  --textBaseColor: #494949;
+  --var100: 100px;
+}/*# sourceMappingURL=root-style.css.map */

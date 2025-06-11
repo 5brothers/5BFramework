@@ -1,0 +1,204 @@
+/* Adaptive */
+@media (max-width: 1366px) {
+  .fdc-1366 {
+    flex-direction: column;
+  }
+  .dg-5-1366 {
+    grid-template-columns: repeat(5, minmax(100px, 1fr));
+  }
+  .dg-4-1366 {
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+  }
+  .dg-3-1366 {
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+  }
+  .dg-2-1366 {
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+  }
+  .dg-1-1366 {
+    grid-template-columns: repeat(1, minmax(100px, 1fr));
+  }
+}
+@media (max-width: 1024px) {
+  h1,
+  .h1 {
+    font-size: 3rem;
+    margin: 0 0 3rem;
+  }
+  h2,
+  .h2 {
+    font-size: 2.8rem;
+    margin: 1rem 0 2.8rem;
+  }
+  h3,
+  .h3 {
+    font-size: 2.4rem;
+    margin: 1rem 0 2.4rem;
+  }
+  h4,
+  .h4 {
+    font-size: 2.2rem;
+    margin: 1rem 0 2.2rem;
+  }
+  h5,
+  .h5 {
+    font-size: 2rem;
+    margin: 1rem 0 2rem;
+  }
+  h6,
+  .h6 {
+    font-size: 1.8rem;
+    margin: 1rem 0 1.8rem;
+  }
+  .fdc-1024 {
+    flex-direction: column;
+  }
+  .dg-5-1024 {
+    grid-template-columns: repeat(5, minmax(100px, 1fr));
+  }
+  .dg-4-1024 {
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+  }
+  .dg-3-1024 {
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+  }
+  .dg-2-1024 {
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+  }
+  .dg-1-1024 {
+    grid-template-columns: repeat(1, minmax(100px, 1fr));
+  }
+}
+@media (max-width: 900px) {
+  .fdc-900 {
+    flex-direction: column;
+  }
+  .dg-5-900 {
+    grid-template-columns: repeat(5, minmax(100px, 1fr));
+  }
+  .dg-4-900 {
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+  }
+  .dg-3-900 {
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+  }
+  .dg-2-900 {
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+  }
+  .dg-1-900 {
+    grid-template-columns: repeat(1, minmax(100px, 1fr));
+  }
+}
+@media (max-width: 768px) {
+  .fdc-768 {
+    flex-direction: column;
+  }
+  .dg-5-768 {
+    grid-template-columns: repeat(5, minmax(100px, 1fr));
+  }
+  .dg-4-768 {
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+  }
+  .dg-3-768 {
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+  }
+  .dg-2-768 {
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+  }
+  .dg-1-768 {
+    grid-template-columns: repeat(1, minmax(100px, 1fr));
+  }
+}
+@media (max-width: 640px) {
+  html {
+    font-size: 8px;
+  }
+  h1,
+  .h1 {
+    font-size: 2.8rem;
+    margin: 0 0 2.8rem;
+  }
+  h2,
+  .h2 {
+    font-size: 2.6rem;
+    margin: 1rem 0 2.6rem;
+  }
+  h3,
+  .h3 {
+    font-size: 2.2rem;
+    margin: 1rem 0 2.2rem;
+  }
+  h4,
+  .h4 {
+    font-size: 2rem;
+    margin: 1rem 0 2rem;
+  }
+  h5,
+  .h5 {
+    font-size: 1.8rem;
+    margin: 1rem 0 1.8rem;
+  }
+  h6,
+  .h6 {
+    font-size: 1.8rem;
+    margin: 1rem 0 1.8rem;
+  }
+  .fdc-640 {
+    flex-direction: column;
+  }
+  .dg-5-640 {
+    grid-template-columns: repeat(5, minmax(100px, 1fr));
+  }
+  .dg-4-640 {
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+  }
+  .dg-3-640 {
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+  }
+  .dg-2-640 {
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+  }
+  .dg-1-640 {
+    grid-template-columns: repeat(1, minmax(100px, 1fr));
+  }
+}
+@media (max-width: 480px) {
+  .fdc-480 {
+    flex-direction: column;
+  }
+  .dg-5-480 {
+    grid-template-columns: repeat(5, minmax(100px, 1fr));
+  }
+  .dg-4-480 {
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+  }
+  .dg-3-480 {
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+  }
+  .dg-2-480 {
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+  }
+  .dg-1-480 {
+    grid-template-columns: repeat(1, minmax(100px, 1fr));
+  }
+}
+@media (max-width: 360px) {
+  .fdc-360 {
+    flex-direction: column;
+  }
+  .dg-5-360 {
+    grid-template-columns: repeat(5, minmax(100px, 1fr));
+  }
+  .dg-4-360 {
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+  }
+  .dg-3-360 {
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+  }
+  .dg-2-360 {
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+  }
+  .dg-1-360 {
+    grid-template-columns: repeat(1, minmax(100px, 1fr));
+  }
+}/*# sourceMappingURL=adaptive.css.map */
