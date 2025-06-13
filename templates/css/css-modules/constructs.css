@@ -65,13 +65,6 @@
   padding-left: 0;
 }
 
-.np {
-  padding: 0 !important;
-}
-.nm {
-  margin: 0 !important;
-}
-
 .img-holder img,
 .img-holder svg {
   display: block;

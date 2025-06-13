@@ -3,7 +3,7 @@
 .init-btn {
   display: inline-block;
   text-align: center;
-  padding: 12px 20px;
+  padding: 16px 20px;
   white-space: nowrap;
   margin: 0;
   border-radius: var(--rootBdrs);
@@ -128,7 +128,7 @@
 }
 
 /*Pink Button*/
-.gray-btn {
+.pink-btn {
   background: rgb(245, 110, 110);
   &.init-btn {
     color: #fff;
@@ -142,7 +142,7 @@
 }
 
 /*Orange Button*/
-.gray-btn {
+.orange-btn {
   background: hsl(27, 100%, 63%);
   &.init-btn {
     color: #333;

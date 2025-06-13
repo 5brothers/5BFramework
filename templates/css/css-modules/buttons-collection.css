@@ -2,7 +2,7 @@
 .init-btn {
   display: inline-block;
   text-align: center;
-  padding: 12px 20px;
+  padding: 16px 20px;
   white-space: nowrap;
   margin: 0;
   border-radius: var(--rootBdrs);
@@ -127,30 +127,30 @@
 }
 
 /*Pink Button*/
-.gray-btn {
+.pink-btn {
   background: rgb(245, 110, 110);
 }
-.gray-btn.init-btn {
+.pink-btn.init-btn {
   color: #fff;
 }
-.gray-btn.init-btn:hover {
+.pink-btn.init-btn:hover {
   background: hsl(0, 87%, 65%);
 }
-.gray-btn.t {
+.pink-btn.t {
   color: rgb(245, 110, 110);
 }
 
 /*Orange Button*/
-.gray-btn {
+.orange-btn {
   background: hsl(27, 100%, 63%);
 }
-.gray-btn.init-btn {
+.orange-btn.init-btn {
   color: #333;
 }
-.gray-btn.init-btn:hover {
+.orange-btn.init-btn:hover {
   background: hsl(27, 100%, 58%);
 }
-.gray-btn.t {
+.orange-btn.t {
   color: hsl(27, 100%, 63%);
 }
 
