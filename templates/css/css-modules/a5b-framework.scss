@@ -1,0 +1,704 @@
+/* full height page container for always bottom footer */
+.contento {
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+/* center page content */
+.centro {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1400px;
+}
+
+// Text view 
+.tu { 
+  text-transform: uppercase;
+}
+.tac {
+  text-align: center;
+}
+.tdn {
+  text-decoration: none; 
+}
+.nw {
+  white-space: nowrap;
+}
+
+// positions and displays
+.pr {
+  position: relative;
+}
+.pa {
+  position: absolute;
+}
+.pf {
+  position: fixed;
+}
+.db {
+  display: block;
+}
+.dib {
+  display: inline-block;
+}
+.df {
+  display: flex;
+}
+.dg {
+  display: grid;
+}
+.dn {
+  display: none;
+}
+
+.z1 {
+  z-index: 1;
+}
+.z2 {
+  z-index: 2;
+}
+ 
+/* coub icons collections */
+@mixin ico-options {
+    width: var(--varIco);
+    height: var(--varIco);
+    flex: 0 0 var(--varIco);
+}
+
+.ico {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+    img,
+    svg {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.ico-16 {
+    --varIco: 1.6rem;
+    @include ico-options;
+}
+
+.ico-20 {
+    --varIco: 2rem;
+    @include ico-options;
+}
+
+.ico-24 {
+    --varIco: 2.4rem;
+    @include ico-options;
+}
+
+.ico-28 {
+    --varIco: 2.8rem;
+    @include ico-options;
+}
+
+.ico-32 {
+    --varIco: 3.2rem;
+    @include ico-options;
+}
+
+.ico-36 {
+    --varIco: 3.6rem;
+    @include ico-options;
+}
+
+.ico-40 {
+    --varIco: 4rem;
+    @include ico-options;
+}
+
+.ico-44 {
+    --varIco: 4.4rem;
+    @include ico-options;
+}
+
+.ico-50 {
+    --varIco: 5rem;
+    @include ico-options;
+}
+
+.ico-60 {
+    --varIco: 6rem;
+    @include ico-options;
+}
+
+.ico-80 {
+    --varIco: 8rem;
+    @include ico-options;
+}
+
+.ico-100 {
+    --varIco: 10rem;
+    @include ico-options;
+}
+
+.ico-120 {
+    --varIco: 12rem;
+    @include ico-options;
+}
+
+.ico-140 {
+    --varIco: 14rem;
+    @include ico-options;
+}
+
+.ico-160 {
+    --varIco: 16rem;
+    @include ico-options;
+}
+
+.ico-180 {
+    --varIco: 18rem;
+    @include ico-options;
+}
+
+.ico-200 {
+    --varIco: 20rem;
+    @include ico-options;
+}
+
+/* gap */
+.gap-5 {
+    gap: 5px;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.gap-15 {
+    gap: 15px;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.gap-25 {
+    gap: 25px;
+}
+
+.gap-30 {
+    gap: 30px;
+}
+
+.gap-35 {
+    gap: 35px;
+}
+
+.gap-40 {
+    gap: 40px;
+}
+
+.gap-45 {
+    gap: 45px;
+}
+
+.gap-50 {
+    gap: 50px;
+}
+
+/* margin constructor */
+@mixin marge-options {
+    margin: var(--varMarge) 0;
+
+    &.mt {
+        margin-top: var(--varMarge);
+        margin-bottom: 0;
+    }
+
+    &.mb {
+        margin-top: 0;
+        margin-bottom: var(--varMarge);
+    }
+
+    &.ms {
+        margin: var(--varMarge);
+    }
+}
+
+.marge-100 {
+    --varMarge: 10rem;
+    @include marge-options;
+}
+
+.marge-75 {
+    --varMarge: 7.5rem; 
+    @include marge-options;
+}
+
+.marge-50 {
+    --varMarge: 5rem; 
+    @include marge-options;
+}
+.marge-45 {
+    --varMarge: 4.5rem;
+    @include marge-options;
+}
+.marge-40 {
+    --varMarge: 4rem;
+    @include marge-options;
+}
+
+.marge-35 {
+    --varMarge: 3.5rem;
+    @include marge-options;
+}
+.marge-30 {
+    --varMarge: 3rem;
+    @include marge-options;
+}
+.marge-25 {
+    --varMarge: 2.5rem;
+    @include marge-options;
+}
+.marge-20 {
+    --varMarge: 2rem;
+    @include marge-options;
+}
+.marge-15 {
+    --varMarge: 1.5rem;
+    @include marge-options;
+}
+
+.marge-10 {
+    --varMarge: 1rem;
+    @include marge-options;
+}
+
+.marge-5 {
+    --varMarge: 0.5rem;
+    @include marge-options;
+}
+
+/* padding constructor */
+@mixin padge-options {
+    padding: var(--varPadge) 0; 
+
+    &.pt {
+        padding-top: var(--varPadge);
+        padding-bottom: 0;
+    }
+
+    &.pb {
+        padding-bottom: var(--varPadge);
+        padding-top: 0;
+    }
+    &.ps { 
+        padding: var(--varPadge);
+    }
+}
+
+.padge-100 {
+    --varPadge: 10rem;
+    @include padge-options;
+}
+
+.padge-75 {
+    --varPadge: 7.5rem;
+    @include padge-options;
+}
+
+.padge-50 {
+    --varPadge: 5rem;
+    @include padge-options;
+}
+.padge-45 {
+    --varPadge: 4.5rem;
+    @include padge-options;
+}
+.padge-40 {
+    --varPadge: 4rem;
+    @include padge-options;
+}
+
+.padge-35 {
+    --varPadge: 3.5rem;
+    @include padge-options;
+}
+
+.padge-30 {
+    --varPadge: 3rem;
+    @include padge-options;
+}
+
+.padge-25 {
+    --varPadge: 2.5rem;
+    @include padge-options;
+}
+
+.padge-20 {
+    --varPadge: 2rem;
+    @include padge-options;
+}
+
+.padge-15 {
+    --varPadge: 1.5rem;
+    @include padge-options;
+}
+
+.padge-10 {
+    --varPadge: 1rem;
+    @include padge-options;
+}
+
+.padge-5 {
+    --varPadge: 0.5rem;
+    @include padge-options;
+}
+
+/* radius */
+.radi-5 {
+  border-radius: 5px;
+}
+
+.radi-10 {
+  border-radius: 10px;
+}
+
+.radi-15 {
+  border-radius: 15px;
+}
+
+.radi-20 {
+  border-radius: 20px;
+}
+
+.radi-25 {
+  border-radius: 25px;
+}
+
+.radi-30 {
+  border-radius: 30px;
+}
+
+.radi-35 {
+  border-radius: 35px;
+}
+
+.radi-40 {
+  border-radius: 40px;
+}
+
+.radi-45 {
+  border-radius: 45px;
+}
+
+.radi-50 {
+  border-radius: 50px;
+}
+
+/* ===== Buttons ===== */
+
+.init-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 20px;
+  white-space: nowrap;
+  margin: 0;
+  border-radius: var(--rootBdrs);
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.2s;
+  &:hover {
+    transition: 0.2s;
+  }
+}
+ 
+.tag-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 15px;
+  margin: 0;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.2s;
+  &:hover {
+    transition: 0.2s;
+  }
+}
+
+/*Root Color Button*/
+.root-btn {
+  background: var(--colorRoot);
+  &.init-btn, &.tag-btn {
+    color: #fff;
+    &:hover {
+      background: var(--colorRootHov);
+    }
+  }
+  &.t {
+    color: var(--colorRoot);
+  }
+}
+
+/*Blue Button*/
+.blue-btn {
+  background: hsl(216, 100%, 48%);
+  &.init-btn, &.tag-btn {
+    color: #fff;
+    &:hover {
+      background: hsl(216, 100%, 53%);
+    }
+  }
+  &.t {
+    color: hsl(216, 100%, 48%);
+  }
+}
+
+/*White Button*/
+.white-btn {
+  background: #fff;
+  &.init-btn, &.tag-btn {
+    color: #333;
+    &:hover {
+      background: #e6e6e6;
+    }
+  }
+  &.t {
+    color: #fff;
+  }
+}
+
+/*Black Button*/
+.black-btn {
+  background: hsl(0, 0%, 20%);
+  &.init-btn, &.tag-btn {
+    color: #fff;
+    &:hover {
+      background: hsl(0, 0%, 10%);
+    }
+  }
+  &.t {
+    color: hsl(0, 0%, 20%);
+  }
+}
+
+/*Green Button*/
+.green-btn {
+  background: hsl(113, 78%, 32%);
+  &.init-btn, &.tag-btn {
+    color: #fff;
+    &:hover {
+      background: hsl(113, 78%, 22%);
+    }
+  }
+  &.t {
+    color: hsl(113, 78%, 32%);
+  }
+}
+
+/*Red Button*/
+.red-btn {
+  background: hsl(0, 75%, 38%);
+  &.init-btn, &.tag-btn {
+    color: #fff;
+    &:hover {
+      background: hsl(0, 75%, 28%);
+    }
+  }
+  &.t {
+    color: hsl(0, 75%, 38%);
+  }
+}
+
+/*Gray Button*/
+.gray-btn {
+  background: hsl(0, 0%, 59%);
+  &.init-btn, &.tag-btn {
+    color: #fff;
+    &:hover {
+      background: hsl(0, 0%, 49%);
+    }
+  }
+  &.t {
+    color: hsl(0, 0%, 59%);
+  }
+}
+
+/*Pink Button*/
+.pink-btn {
+  background: rgb(245, 110, 110);
+  &.init-btn, &.tag-btn {
+    color: #fff;
+    &:hover {
+      background: hsl(0, 87%, 65%);
+    }
+  }
+  &.t {
+    color: rgb(245, 110, 110);
+  }
+}
+
+/*Orange Button*/
+.orange-btn {
+  background: hsl(27, 100%, 63%);
+  &.init-btn, &.tag-btn {
+    color: #333;
+    &:hover {
+      background: hsl(27, 100%, 58%);
+    }
+  }
+  &.t {
+    color: hsl(27, 100%, 63%);
+  }
+}
+
+.t,
+.t:hover {
+  padding: 0;
+  background: none !important;
+}
+
+/* center background image */
+.midnight {
+  position: relative;
+  width: 100%;
+  min-width: 100px;
+  min-height: 100px;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    display: block;
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .mid-cont {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.ws {
+  white-space: nowrap;
+}
+.cup {
+  cursor: pointer;
+}
+.nm {
+  margin: 0;
+}
+.np {
+  padding: 0;
+}
+
+.shad {
+  box-shadow: 0px 0px 17.69px -4px rgba(0, 0, 0, 0.25);
+}
+
+.ttu {
+  text-transform: uppercase;
+}
+
+.oh {
+  position: relative;
+  overflow: hidden;
+}
+
+.lisn {
+  list-style: none;
+  padding-left: 0;
+}
+
+
+// fx constructor
+.fx {
+    display: flex;
+    align-items: center;
+}
+
+// horizontal
+.hc {
+    justify-content: center;
+}
+.he {
+    justify-content: end;
+}
+.hb {
+    justify-content: space-between;
+}
+.ha {
+    justify-content: space-around;
+}
+
+// vertical
+.v {
+    flex-direction: column;
+}
+.vc {
+  align-items: center;
+}
+.ve {
+    align-items: end;
+}
+.vs {
+    align-items: stretch;
+}
+
+.cell > * {
+  flex: 1 1 100%;
+}
+
+.chess > * {
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+
+.f-100 {
+  flex: 1 1 100%;
+}
+
+/* grid columns */
+.dg-6 {
+  grid-template-columns: repeat(6, minmax(100px, 1fr));
+}
+.dg-5 {
+  grid-template-columns: repeat(5, minmax(100px, 1fr));
+}
+.dg-4 {
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
+}
+.dg-3 {
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+}
+.dg-2 {
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+}
+
+.span-2 {
+  grid-column: span 2;
+}
+
+.span-3 {
+  grid-column: span 3;
+}
+
+.span-4 {
+  grid-column: span 4;
+}
+
+.span-5 {
+  grid-column: span 5;
+}
+
+.span-6 {
+  grid-column: span 6;
+}

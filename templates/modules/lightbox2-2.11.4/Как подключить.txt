@@ -7,4 +7,4 @@
 
 --- в HTML
 
-Увеличивающим ссылкам добавить data-lightbox="roadtrip" 
+Увеличивающим ссылкам добавить data-lightbox="roadtrip"

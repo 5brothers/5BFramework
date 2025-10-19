@@ -1,0 +1,424 @@
+/*Comissioner*/
+@font-face {
+  font-family: "Comissioner";
+  src: url("../../fonts/Commissioner-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Comissioner";
+  src: url("../../fonts/Commissioner-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Comissioner";
+  src: url("../../fonts/Commissioner-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Comissioner";
+  src: url("../../fonts/Commissioner-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Comissioner";
+  src: url("../../fonts/Commissioner-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Comissioner";
+  src: url("../../fonts/Commissioner-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Comissioner";
+  src: url("../../fonts/Commissioner-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Comissioner";
+  src: url("../../fonts/Commissioner-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Comissioner";
+  src: url("../../fonts/Commissioner-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: fallback;
+}
+:root {
+  --fontRoot: "Comissioner";
+  --fontSizeRoot: 1.7rem;
+  --colorRoot: hsl(216, 100%, 63%);
+  --colorRootHov: hsl(216, 100%, 43%);
+  --colorTxt: #494949;
+  --inputPadding: 15px;
+  --transit: 0.2s;
+  --rootBdrs: 10px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  font-size: var(--fontSizeRoot);
+  font-family: var(--fontRoot), sans-serif;
+  font-weight: 400;
+  margin: 0;
+  color: var(--colorTxt);
+  position: relative;
+  background: #f7f7f7;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* titles style */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  line-height: 120%;
+}
+
+h1,
+.h1 {
+  font-size: 3.4rem;
+  margin: 0 0 3rem;
+}
+
+h2,
+.h2 {
+  font-size: 3rem;
+  margin: 1rem 0 2.8rem;
+}
+
+h3,
+.h3 {
+  font-size: 2.6rem;
+  margin: 1rem 0 2.6rem;
+}
+
+h4,
+.h4 {
+  font-size: 2.4rem;
+  margin: 1rem 0 2.4rem;
+}
+
+h5,
+.h5 {
+  font-size: 2.2rem;
+  margin: 1rem 0 2.2rem;
+}
+
+h6,
+.h6 {
+  font-size: 2rem;
+  margin: 1rem 0 2rem;
+}
+
+/* a tag style */
+a {
+  color: var(--colorRoot);
+  transition: all var(--transit);
+}
+a:hover {
+  color: var(--colorRootHov);
+}
+
+/* p tag style */
+p {
+  margin: 15px 0;
+  line-height: 120%;
+}
+
+/* img tag style */
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  border: none;
+}
+
+/* blockquote tag style */
+blockquote {
+  padding: 10px;
+}
+
+/* ul li tag style */
+ul li,
+ol li {
+  margin: 0 0 2rem 0;
+}
+
+b {
+  font-weight: bold;
+}
+
+/*Table*/
+table {
+  border-collapse: collapse;
+  border: 1px solid #333;
+}
+table thead tr,
+table thead:hover tr {
+  background: var(--colorRoot);
+  color: #fff;
+}
+table tfoot tr,
+table tfoot:hover tr {
+  background: #333;
+  color: #fff;
+}
+table tr {
+  transition: 0.2s;
+}
+table tr:hover {
+  background: #c7c7c7;
+  transition: 0.2s;
+}
+table tr td {
+  border-bottom: 1px solid #999;
+  padding: 5px 10px;
+}
+table tr:last-of-type td {
+  border-bottom: none;
+}
+
+/* ===== Form Elements ===== */
+form label {
+  display: inline-block;
+  margin: 0 0 5px 0;
+}
+
+.form-full {
+  width: 100%;
+}
+.form-full :is(input:is([type=text],
+[type=tel],
+[type=email],
+[type=password],
+[type=search],
+[type=number],
+[type=file]),
+textarea,
+select) {
+  width: 100%;
+}
+.form-full .password-holder,
+.form-full .select-holder {
+  width: 100%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type=submit],
+input[type=search],
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: var(--fontRoot), sans-serif;
+  font-size: var(--fontSizeRoot);
+  display: block;
+  padding: var(--inputPadding);
+  margin-bottom: 10px;
+  border: none;
+  background: #EDEDED;
+  border-radius: var(--rootBdrs);
+}
+
+input[type=submit],
+input[type=search],
+button {
+  border: none;
+  cursor: pointer;
+  font-family: var(--fontRoot), sans-serif;
+}
+
+select {
+  padding-right: 30px;
+  background-image: url(../img/arrow-down-2.svg);
+}
+select option {
+  padding: 22px;
+}
+
+.select-holder {
+  display: inline-block;
+  position: relative;
+}
+.select-holder .select-arrow {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  bottom: 0;
+  padding: 2px;
+  width: 20px;
+  height: 20px;
+}
+.select-holder .select-arrow svg,
+.select-holder .select-arrow svg g {
+  fill: var(--colorRoot);
+}
+
+.password-holder {
+  display: inline-block;
+  position: relative;
+}
+.password-holder input :is([type=password], [type=text]) {
+  padding-right: 20px;
+}
+.password-holder .ico {
+  position: absolute;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  right: 5px;
+  bottom: 0;
+}
+.password-holder .eye {
+  display: none;
+}
+.password-holder .eye svg {
+  fill: var(--colorRoot);
+}
+.password-holder .show-pass.close .eye-close {
+  display: block;
+}
+.password-holder .show-pass.open .eye-open {
+  display: block;
+}
+
+/*Custom radio*/
+.radio {
+  display: none;
+}
+
+.radio-custom {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  position: relative;
+}
+.radio-custom .label {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.radio:checked + .radio-custom::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  bottom: 3px;
+  left: 3px;
+  background: #403c42;
+  border-radius: 2px;
+}
+
+.radio-custom,
+.radio:checked + .radio-custom::before {
+  border-radius: 50%;
+}
+
+/*Custom checkbox*/
+.checkbox {
+  display: none;
+}
+
+.checkbox-custom {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.checkbox-custom .label {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.checkbox:checked + .checkbox-custom::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  bottom: 2px;
+  left: 2px;
+  background: url(../img/checkmark-1.svg);
+  background-size: contain;
+  border-radius: 2px;
+}
+
+header,
+.header {
+  padding: 10px 0;
+}
+
+section,
+.section {
+  padding: 30px 0 50px;
+}
+
+footer,
+.footer {
+  background: #333;
+  padding: 50px 0;
+}/*# sourceMappingURL=a5b-html.css.map */
