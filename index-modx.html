@@ -8,10 +8,10 @@
     <meta charset="{$_modx->config.modx_charset}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{$_modx->resource.description}">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="canonical" href="{$_modx->config.site_url}{if $_modx->resource.id != '1'}{$_modx->resource.id | url}{/if}" />
+    <link rel="stylesheet" href="templates/modules/glide-3.7.1/css/glide.core.css">
     <link rel="stylesheet" href="templates/css/a5b-styles.css">
-    <link rel="icon" type="image/png" href="favicon-64x64.png" sizes="64x64">
+    <link rel="icon" type="image/png" href="templates/img/favicon-64x64.png" sizes="64x64">
 </head>
 
 <body>
@@ -21,6 +21,9 @@
     <div class="footer">
 
     </div>
+
+    <!-- Scripts -->
+    <script src="templates/modules/glide-3.7.1/js/glide.js"></script>
 
     <script>
         //Загружаем код спрайта SVG в шаблон

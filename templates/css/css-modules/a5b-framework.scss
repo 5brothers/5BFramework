@@ -18,7 +18,10 @@
 .tac {
   text-align: center;
 }
-.tdn {
+.tar {
+  text-align: right;
+}
+.tdn { 
   text-decoration: none; 
 }
 .nw {
@@ -41,6 +44,9 @@
 .dib {
   display: inline-block;
 }
+.dif {
+  display: inline-flex;
+} 
 .df {
   display: flex;
 }
@@ -57,7 +63,40 @@
 .z2 {
   z-index: 2;
 }
- 
+
+// Another Styles
+.ws { 
+  white-space: nowrap;
+}
+.cup {
+  cursor: pointer;
+}
+.nm {
+  margin: 0;
+}
+.np {
+  padding: 0;
+}
+.shad {
+  box-shadow: 0px 0px 17.69px -4px rgba(0, 0, 0, 0.25);
+}
+.tu {
+  text-transform: uppercase;
+} 
+.oh {
+  position: relative;
+  overflow: hidden;
+}
+.lisn {
+  list-style: none;
+  padding-left: 0;
+}
+.ofc {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+} 
+
 /* coub icons collections */
 @mixin ico-options {
     width: var(--varIco);
@@ -586,42 +625,13 @@
   }
 }
 
-.ws {
-  white-space: nowrap;
-}
-.cup {
-  cursor: pointer;
-}
-.nm {
-  margin: 0;
-}
-.np {
-  padding: 0;
-}
-
-.shad {
-  box-shadow: 0px 0px 17.69px -4px rgba(0, 0, 0, 0.25);
-}
-
-.ttu {
-  text-transform: uppercase;
-}
-
-.oh {
-  position: relative;
-  overflow: hidden;
-}
-
-.lisn {
-  list-style: none;
-  padding-left: 0;
-}
-
-
 // fx constructor
 .fx {
     display: flex;
     align-items: center;
+}
+.w {
+  flex-wrap: wrap;
 }
 
 // horizontal
@@ -642,7 +652,10 @@
 .v {
     flex-direction: column;
 }
-.vc {
+.vt {
+    align-items: start;
+}
+.vc { 
   align-items: center;
 }
 .ve {

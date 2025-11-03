@@ -135,4 +135,43 @@
   .top-nav.show {
     display: block;
   }
+}
+.modalio-cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0s 0.3s;
+}
+.modalio-cover.showIt {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease-in-out, visibility 0s;
+  z-index: 1000;
+}
+
+.modalio {
+  position: fixed;
+  width: 100%;
+  max-width: 1050px;
+  padding: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 10vh;
+  background: #fff;
+  opacity: 0;
+  transform: translateY(20px);
+  z-index: -1;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.modalio.showIt {
+  z-index: 1001;
+  opacity: 1;
+  transform: translateY(0);
 }/*# sourceMappingURL=a5b-project.css.map */

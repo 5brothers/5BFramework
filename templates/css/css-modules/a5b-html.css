@@ -269,7 +269,6 @@ textarea {
   font-size: var(--fontSizeRoot);
   display: block;
   padding: var(--inputPadding);
-  margin-bottom: 10px;
   border: none;
   background: #EDEDED;
   border-radius: var(--rootBdrs);
@@ -285,7 +284,7 @@ button {
 
 select {
   padding-right: 30px;
-  background-image: url(../img/arrow-down-2.svg);
+  background-image: url(../../img/arrow-down-2.svg);
 }
 select option {
   padding: 22px;
@@ -402,7 +401,7 @@ select option {
   right: 2px;
   bottom: 2px;
   left: 2px;
-  background: url(../img/checkmark-1.svg);
+  background: url(../../img/checkmark-1.svg);
   background-size: contain;
   border-radius: 2px;
 }
