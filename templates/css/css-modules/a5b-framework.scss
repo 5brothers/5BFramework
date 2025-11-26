@@ -1,3 +1,5 @@
+@use '../mixins/mixins' as mix;
+
 /* full height page container for always bottom footer */
 .contento {
     flex-grow: 1;
@@ -104,104 +106,120 @@
     flex: 0 0 var(--varIco);
 }
 
+// Ico
 .ico {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 
-    img,
-    svg {
-        object-fit: contain;
-        width: 100%;
-        height: 100%;
-    }
+  img,
+  svg {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.ico-10 {
+  --varIco: 1rem;
+  @include mix.ico-options;
+}
+
+.ico-12 {
+  --varIco: 1.2rem;
+  @include mix.ico-options;
+}
+
+.ico-14 {
+  --varIco: 1.4rem;
+  @include mix.ico-options;
 }
 
 .ico-16 {
-    --varIco: 1.6rem;
-    @include ico-options;
+  --varIco: 1.6rem;
+  @include mix.ico-options;
 }
 
 .ico-20 {
-    --varIco: 2rem;
-    @include ico-options;
+  --varIco: 2rem;
+  @include mix.ico-options;
 }
 
 .ico-24 {
-    --varIco: 2.4rem;
-    @include ico-options;
+  --varIco: 2.4rem;
+  @include mix.ico-options;
 }
 
 .ico-28 {
-    --varIco: 2.8rem;
-    @include ico-options;
+  --varIco: 2.8rem;
+  @include mix.ico-options;
 }
 
 .ico-32 {
-    --varIco: 3.2rem;
-    @include ico-options;
+  --varIco: 3.2rem;
+  @include mix.ico-options;
 }
 
 .ico-36 {
-    --varIco: 3.6rem;
-    @include ico-options;
+  --varIco: 3.6rem;
+  @include mix.ico-options;
 }
 
 .ico-40 {
-    --varIco: 4rem;
-    @include ico-options;
+  --varIco: 4rem;
+  @include mix.ico-options;
 }
 
 .ico-44 {
-    --varIco: 4.4rem;
-    @include ico-options;
+  --varIco: 4.4rem;
+  @include mix.ico-options;
 }
 
 .ico-50 {
-    --varIco: 5rem;
-    @include ico-options;
+  --varIco: 5rem;
+  @include mix.ico-options;
 }
 
 .ico-60 {
-    --varIco: 6rem;
-    @include ico-options;
+  --varIco: 6rem;
+  @include mix.ico-options;
 }
 
 .ico-80 {
-    --varIco: 8rem;
-    @include ico-options;
+  --varIco: 8rem;
+  @include mix.ico-options;
 }
 
 .ico-100 {
-    --varIco: 10rem;
-    @include ico-options;
+  --varIco: 10rem;
+  @include mix.ico-options;
 }
 
 .ico-120 {
-    --varIco: 12rem;
-    @include ico-options;
+  --varIco: 12rem;
+  @include mix.ico-options;
 }
 
 .ico-140 {
-    --varIco: 14rem;
-    @include ico-options;
+  --varIco: 14rem;
+  @include mix.ico-options;
 }
 
 .ico-160 {
-    --varIco: 16rem;
-    @include ico-options;
+  --varIco: 16rem;
+  @include mix.ico-options;
 }
 
 .ico-180 {
-    --varIco: 18rem;
-    @include ico-options;
+  --varIco: 18rem;
+  @include mix.ico-options;
 }
 
 .ico-200 {
-    --varIco: 20rem;
-    @include ico-options;
+  --varIco: 20rem;
+  @include mix.ico-options;
 }
 
 /* gap */
@@ -245,153 +263,126 @@
     gap: 50px;
 }
 
-/* margin constructor */
-@mixin marge-options {
-    margin: var(--varMarge) 0;
-
-    &.mt {
-        margin-top: var(--varMarge);
-        margin-bottom: 0;
-    }
-
-    &.mb {
-        margin-top: 0;
-        margin-bottom: var(--varMarge);
-    }
-
-    &.ms {
-        margin: var(--varMarge);
-    }
-}
-
+// Marge
 .marge-100 {
-    --varMarge: 10rem;
-    @include marge-options;
+  --varMarge: 10rem;
+  @include mix.marge-options;
 }
 
 .marge-75 {
-    --varMarge: 7.5rem; 
-    @include marge-options;
+  --varMarge: 7.5rem;
+  @include mix.marge-options;
 }
 
 .marge-50 {
-    --varMarge: 5rem; 
-    @include marge-options;
+  --varMarge: 5rem;
+  @include mix.marge-options;
 }
+
 .marge-45 {
-    --varMarge: 4.5rem;
-    @include marge-options;
+  --varMarge: 4.5rem;
+  @include mix.marge-options;
 }
+
 .marge-40 {
-    --varMarge: 4rem;
-    @include marge-options;
+  --varMarge: 4rem;
+  @include mix.marge-options;
 }
 
 .marge-35 {
-    --varMarge: 3.5rem;
-    @include marge-options;
+  --varMarge: 3.5rem;
+  @include mix.marge-options;
 }
+
 .marge-30 {
-    --varMarge: 3rem;
-    @include marge-options;
+  --varMarge: 3rem;
+  @include mix.marge-options;
 }
+
 .marge-25 {
-    --varMarge: 2.5rem;
-    @include marge-options;
+  --varMarge: 2.5rem;
+  @include mix.marge-options;
 }
+
 .marge-20 {
-    --varMarge: 2rem;
-    @include marge-options;
+  --varMarge: 2rem;
+  @include mix.marge-options;
 }
+
 .marge-15 {
-    --varMarge: 1.5rem;
-    @include marge-options;
+  --varMarge: 1.5rem;
+  @include mix.marge-options;
 }
 
 .marge-10 {
-    --varMarge: 1rem;
-    @include marge-options;
+  --varMarge: 1rem;
+  @include mix.marge-options;
 }
 
 .marge-5 {
-    --varMarge: 0.5rem;
-    @include marge-options;
+  --varMarge: 0.5rem;
+  @include mix.marge-options;
 }
 
-/* padding constructor */
-@mixin padge-options {
-    padding: var(--varPadge) 0; 
-
-    &.pt {
-        padding-top: var(--varPadge);
-        padding-bottom: 0;
-    }
-
-    &.pb {
-        padding-bottom: var(--varPadge);
-        padding-top: 0;
-    }
-    &.ps { 
-        padding: var(--varPadge);
-    }
-}
-
+// Padge
 .padge-100 {
-    --varPadge: 10rem;
-    @include padge-options;
+  --varPadge: 10rem;
+  @include mix.padge-options;
 }
 
 .padge-75 {
-    --varPadge: 7.5rem;
-    @include padge-options;
+  --varPadge: 7.5rem;
+  @include mix.padge-options;
 }
 
 .padge-50 {
-    --varPadge: 5rem;
-    @include padge-options;
+  --varPadge: 5rem;
+  @include mix.padge-options;
 }
+
 .padge-45 {
-    --varPadge: 4.5rem;
-    @include padge-options;
+  --varPadge: 4.5rem;
+  @include mix.padge-options;
 }
+
 .padge-40 {
-    --varPadge: 4rem;
-    @include padge-options;
+  --varPadge: 4rem;
+  @include mix.padge-options;
 }
 
 .padge-35 {
-    --varPadge: 3.5rem;
-    @include padge-options;
+  --varPadge: 3.5rem;
+  @include mix.padge-options;
 }
 
 .padge-30 {
-    --varPadge: 3rem;
-    @include padge-options;
+  --varPadge: 3rem;
+  @include mix.padge-options;
 }
 
 .padge-25 {
-    --varPadge: 2.5rem;
-    @include padge-options;
+  --varPadge: 2.5rem;
+  @include mix.padge-options;
 }
 
 .padge-20 {
-    --varPadge: 2rem;
-    @include padge-options;
+  --varPadge: 2rem;
+  @include mix.padge-options;
 }
 
 .padge-15 {
-    --varPadge: 1.5rem;
-    @include padge-options;
+  --varPadge: 1.5rem;
+  @include mix.padge-options;
 }
 
 .padge-10 {
-    --varPadge: 1rem;
-    @include padge-options;
+  --varPadge: 1rem;
+  @include mix.padge-options;
 }
 
 .padge-5 {
-    --varPadge: 0.5rem;
-    @include padge-options;
+  --varPadge: 0.5rem;
+  @include mix.padge-options;
 }
 
 /* radius */
@@ -635,10 +626,13 @@
 }
 
 // horizontal
+.hs {
+  justify-content: start;
+}
 .hc {
     justify-content: center;
 }
-.he {
+.he { 
     justify-content: end;
 }
 .hb {

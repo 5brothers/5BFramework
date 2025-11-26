@@ -917,6 +917,10 @@
   flex-wrap: wrap;
 }
 
+.hs {
+  justify-content: start;
+}
+
 .hc {
   justify-content: center;
 }

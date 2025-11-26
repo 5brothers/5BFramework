@@ -1,0 +1,41 @@
+/* margin constructor */
+@mixin marge-options {
+    margin: var(--varMarge) 0;
+
+    &.mt {
+        margin-top: var(--varMarge);
+        margin-bottom: 0;
+    }
+
+    &.mb {
+        margin-top: 0;
+        margin-bottom: var(--varMarge);
+    }
+
+    &.ms {
+        margin: var(--varMarge);
+    }
+}
+/* padding constructor */
+@mixin padge-options {
+    padding: var(--varPadge) 0; 
+
+    &.pt {
+        padding-top: var(--varPadge);
+        padding-bottom: 0;
+    }
+
+    &.pb {
+        padding-bottom: var(--varPadge);
+        padding-top: 0;
+    }
+    &.ps { 
+        padding: var(--varPadge);
+    }
+}
+/* coub icons collections */
+@mixin ico-options {
+  width: var(--varIco);
+  height: var(--varIco);
+  flex: 0 0 var(--varIco);
+} 
