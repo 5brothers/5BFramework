@@ -2,16 +2,17 @@
 @mixin marge-options {
     margin: var(--varMarge) 0;
 
+    &.md {
+        margin: 0 var(--varMarge);
+    }
     &.mt {
         margin-top: var(--varMarge);
         margin-bottom: 0;
     }
-
     &.mb {
         margin-top: 0;
         margin-bottom: var(--varMarge);
     }
-
     &.ms {
         margin: var(--varMarge);
     }
@@ -20,17 +21,19 @@
 @mixin padge-options {
     padding: var(--varPadge) 0; 
 
+    &.pd {
+        padding: 0 var(--varPadge); 
+    }
     &.pt {
         padding-top: var(--varPadge);
         padding-bottom: 0;
     }
-
     &.pb {
         padding-bottom: var(--varPadge);
         padding-top: 0;
     }
     &.ps { 
-        padding: var(--varPadge);
+        padding: var(--varPadge); 
     }
 }
 /* coub icons collections */

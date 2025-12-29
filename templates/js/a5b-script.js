@@ -53,9 +53,20 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-document.querySelectorAll('.tel').forEach(function(el, i) {
-  el.textContent = el.textContent.replace(/(\d{1})(\d{3})(\d{3})(\d{2})(\d{2})/, '$1 ($2) $3-$4-$5');
+//Phone number format
+document.addEventListener('DOMContentLoaded', () => {
+    const phoneElements = document.querySelectorAll('.tel');
+    phoneElements.forEach(element => {
+        let text = element.textContent.trim();
+
+        if (text.startsWith('+7')) {
+            text = text.replace('+7', '8');
+        }
+        text = text.replace(/(\d{1})(\d{3})(\d{3})(\d{2})(\d{2})/, '$1 ($2) $3-$4-$5');
+        element.textContent = text;
+    });
 });
+
 
 // Маска ввода телефона
 (function() {

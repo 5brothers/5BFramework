@@ -9,21 +9,60 @@
     <link rel="canonical" href="/" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="5BFramework быстро, чисто, функционально">
-    <link rel="stylesheet" href="templates/modules/glide-3.7.1/css/glide.core.css">
+    <link rel="stylesheet" href="templates/modules/swiperjs-12.0.3/swiper-bundle.min.css">
+    <link rel="stylesheet" href="templates/modules/nouislider-15.8.1/nouislider.min.css">
     <link rel="stylesheet" href="templates/css/a5b-styles.css">
     <link rel="icon" type="image/png" href="templates/img/favicon-64x64.png" sizes="64x64">
 </head>
 
 <body>
     <div class="contento">
-        
+        <div id="slider" style="margin: 50px auto; width: 300px;"></div>
+<div style="text-align: center;">
+    Значение: <span id="slider-value">0</span>
+</div>
+
     </div>
     <div class="footer">
 
     </div>
 
     <!-- Scripts -->
-    <script src="templates/modules/glide-3.7.1/js/glide.js"></script>
+    <script src="templates/modules/swiperjs-12.0.3/swiper-bundle.min.js"></script>
+    <script src="templates/modules/nouislider-15.8.1/nouislider.min.js"></script>
+    <script src="templates/js/a5b-script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    const slider = document.getElementById('slider');
+    const valueDisplay = document.getElementById('slider-value');
+
+    // Инициализация ползунка
+    noUiSlider.create(slider, {
+        start: [20], // Начальное значение (массив, так как может быть несколько ползунков)
+        connect: 'lower', // Закрашивать полоску с левой стороны (от начала до ползунка)
+        range: {
+            'min': 0,
+            'max': 100
+        },
+        step: 1, // Шаг перемещения
+        // Настройка визуальных подсказок (опционально)
+        pips: {
+            mode: 'steps',
+            stepped: true,
+            density: 4
+        }
+    });
+
+    // Отслеживание изменений (событие 'update')
+    slider.noUiSlider.on('update', function (values, handle) {
+        // values — это массив строк, берем первый элемент и округляем
+        valueDisplay.innerHTML = Math.round(values[handle]);
+    });
+});
+
+    </script>
+
     <script>
         //Загружаем код спрайта SVG в шаблон
         fetch("templates/img/sprite-icons.svg")
