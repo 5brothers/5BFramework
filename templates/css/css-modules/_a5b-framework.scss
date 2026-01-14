@@ -476,55 +476,6 @@
   @include mix.btn-options;
 }
 
-.demo-btn {
-  --btn-color: #3B90D0;
-  --btn-color-hover: hsl(206, 61%, 47%);
-  --btn-color-txt: #3d3d3d;
-  @include mix.btn-options;
-}
-
-.passiv-btn {
-  --btn-color: #4B8058;
-  --btn-color-hover: hsl(135, 26%, 35%);
-  --btn-color-txt: #fff;
-  @include mix.btn-options;
-}
-
-.dobro-btn {
-  --btn-color: #517FA2;
-  --btn-color-hover: hsl(206, 33%, 43%);
-  --btn-color-txt: #fff;
-  @include mix.btn-options;
-}
-
-.kaaba-btn {
-  --btn-color: #B89659;
-  --btn-color-hover: hsl(39, 40%, 49%);
-  --btn-color-txt: #fff;
-  @include mix.btn-options;
-}
-
-.budceli-btn {
-  --btn-color: #A54E45;
-  --btn-color-hover: hsl(6, 41%, 41%);
-  --btn-color-txt: #fff;
-  @include mix.btn-options;
-}
-
-.jun-btn {
-  --btn-color: #508D5D;
-  --btn-color-hover: hsl(133, 28%, 38%);
-  --btn-color-txt: #fff;
-  @include mix.btn-options;
-}
-
-.eco-btn {
-  --btn-color: #4B8058;
-  --btn-color-hover: hsl(135, 26%, 35%);
-  --btn-color-txt: #fff;
-  @include mix.btn-options;
-}
-
 /*Yellow Button*/
 .yellow-btn {
   --btn-color: #FFCC00;
@@ -540,25 +491,7 @@
   --btn-color-txt: #333;
   @include mix.btn-options;
 }
-
-/*Void Button*/
-.void-btn {
-  background: none;
-  color: #929292;
-  border: 1px solid #929292;
-  &.init-btn, &.tag-btn {
-    color: #333;
-    &:hover {
-      color: hsl(0, 0%, 52%);
-      border: 1px solid hsl(0, 0%, 52%);
-    }
-  }
-  &.t { 
-    color: #929292;
-    border: none;
-  }
-}
-
+ 
 /*Black Button*/
 .black-btn {
   --btn-color: #333333;

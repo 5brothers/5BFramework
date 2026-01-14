@@ -53,7 +53,17 @@
             background: var(--btn-color-hover);
         }
     }
-    &.t {
+    &.t { 
         color: var(--btn-color);
+    }
+    &.bdr-btn {
+        background: none; 
+        border: 1px solid var(--btn-color);
+        color: var(--btn-color);
+        &:not(.nh):hover {
+            background: none;
+            border: 1px solid var(--btn-color-hover);
+            color: var(--btn-color-hover);
+        }
     }
 } 
