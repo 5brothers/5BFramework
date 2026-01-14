@@ -1,4 +1,4 @@
-/* margin constructor */
+// margin constructor
 @mixin marge-options {
     margin: var(--varMarge) 0;
 
@@ -17,7 +17,7 @@
         margin: var(--varMarge);
     }
 }
-/* padding constructor */
+// padding constructor 
 @mixin padge-options {
     padding: var(--varPadge) 0; 
 
@@ -36,9 +36,24 @@
         padding: var(--varPadge); 
     }
 }
-/* coub icons collections */
+// coub icons collections
 @mixin ico-options {
   width: var(--varIco);
   height: var(--varIco);
   flex: 0 0 var(--varIco);
+}
+
+// button options
+@mixin btn-options {
+    background: var(--btn-color);
+    &.init-btn,
+    &.tag-btn {
+        color: var(--btn-color-txt);
+        &:not(.nh):hover {
+            background: var(--btn-color-hover);
+        }
+    }
+    &.t {
+        color: var(--btn-color);
+    }
 } 

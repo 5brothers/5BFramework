@@ -99,13 +99,6 @@
   height: 100%;
 } 
 
-/* coub icons collections */
-@mixin ico-options {
-    width: var(--varIco);
-    height: var(--varIco);
-    flex: 0 0 var(--varIco);
-}
-
 // Ico
 .ico {
   display: inline-flex;
@@ -432,32 +425,26 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 16px 20px;
+  padding: 20px 30px;
   white-space: nowrap;
   margin: 0;
   border-radius: var(--rootBdrs);
   cursor: pointer;
   text-decoration: none;
-  transition: 0.2s;
-  &:hover {
-    transition: 0.2s;
-  }
+  transition: all 0.2s;
 }
  
 .tag-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 5px 15px;
+  padding: 10px 20px;
   margin: 0;
-  font-size: 1.4rem;
-  border-radius: 5px;
+  font-size: 1.5rem;
+  border-radius: 10px;
   cursor: pointer;
   text-decoration: none;
-  transition: 0.2s;
-  &:hover {
-    transition: 0.2s;
-  }
+  transition: all 0.2s;
 }
 
 /*Root Color Button*/
@@ -476,114 +463,156 @@
 
 /*Blue Button*/
 .blue-btn {
-  background: hsl(216, 100%, 48%);
-  &.init-btn, &.tag-btn {
-    color: #fff;
-    &:hover {
-      background: hsl(216, 100%, 53%);
-    }
-  }
-  &.t {
-    color: hsl(216, 100%, 48%);
-  }
+  --btn-color: #008CFF;
+  --btn-color-hover: hsl(207, 100%, 45%);
+  --btn-color-txt: #fff;
+  @include mix.btn-options;
+} 
+
+.bluewhite-btn {
+  --btn-color: #E5F4FF;
+  --btn-color-hover: hsl(205, 100%, 90%);
+  --btn-color-txt: #3d3d3d;
+  @include mix.btn-options;
+}
+
+.demo-btn {
+  --btn-color: #3B90D0;
+  --btn-color-hover: hsl(206, 61%, 47%);
+  --btn-color-txt: #3d3d3d;
+  @include mix.btn-options;
+}
+
+.passiv-btn {
+  --btn-color: #4B8058;
+  --btn-color-hover: hsl(135, 26%, 35%);
+  --btn-color-txt: #fff;
+  @include mix.btn-options;
+}
+
+.dobro-btn {
+  --btn-color: #517FA2;
+  --btn-color-hover: hsl(206, 33%, 43%);
+  --btn-color-txt: #fff;
+  @include mix.btn-options;
+}
+
+.kaaba-btn {
+  --btn-color: #B89659;
+  --btn-color-hover: hsl(39, 40%, 49%);
+  --btn-color-txt: #fff;
+  @include mix.btn-options;
+}
+
+.budceli-btn {
+  --btn-color: #A54E45;
+  --btn-color-hover: hsl(6, 41%, 41%);
+  --btn-color-txt: #fff;
+  @include mix.btn-options;
+}
+
+.jun-btn {
+  --btn-color: #508D5D;
+  --btn-color-hover: hsl(133, 28%, 38%);
+  --btn-color-txt: #fff;
+  @include mix.btn-options;
+}
+
+.eco-btn {
+  --btn-color: #4B8058;
+  --btn-color-hover: hsl(135, 26%, 35%);
+  --btn-color-txt: #fff;
+  @include mix.btn-options;
+}
+
+/*Yellow Button*/
+.yellow-btn {
+  --btn-color: #FFCC00;
+  --btn-color-hover: #e6b800;
+  --btn-color-txt: #fff;
+  @include mix.btn-options;
 }
 
 /*White Button*/
 .white-btn {
-  background: #fff;
+  --btn-color: #fff;
+  --btn-color-hover: #e6e6e6;
+  --btn-color-txt: #333;
+  @include mix.btn-options;
+}
+
+/*Void Button*/
+.void-btn {
+  background: none;
+  color: #929292;
+  border: 1px solid #929292;
   &.init-btn, &.tag-btn {
     color: #333;
     &:hover {
-      background: #e6e6e6;
+      color: hsl(0, 0%, 52%);
+      border: 1px solid hsl(0, 0%, 52%);
     }
   }
-  &.t {
-    color: #fff;
+  &.t { 
+    color: #929292;
+    border: none;
   }
 }
 
 /*Black Button*/
 .black-btn {
-  background: hsl(0, 0%, 20%);
-  &.init-btn, &.tag-btn {
-    color: #fff;
-    &:hover {
-      background: hsl(0, 0%, 10%);
-    }
-  }
-  &.t {
-    color: hsl(0, 0%, 20%);
-  }
+  --btn-color: #333333;
+  --btn-color-hover: hsl(0, 0%, 10%);
+  --btn-color-txt: #fff;
+  @include mix.btn-options;
 }
 
 /*Green Button*/
 .green-btn {
-  background: hsl(113, 78%, 32%);
-  &.init-btn, &.tag-btn {
-    color: #fff;
-    &:hover {
-      background: hsl(113, 78%, 22%);
-    }
-  }
-  &.t {
-    color: hsl(113, 78%, 32%);
-  }
+  --btn-color: #00A261;
+  --btn-color-hover: #00A261;
+  --btn-color-txt: #fff;
+  @include mix.btn-options;
 }
 
 /*Red Button*/
 .red-btn {
-  background: hsl(0, 75%, 38%);
-  &.init-btn, &.tag-btn {
-    color: #fff;
-    &:hover {
-      background: hsl(0, 75%, 28%);
-    }
-  }
-  &.t {
-    color: hsl(0, 75%, 38%);
-  }
+  --btn-color: #aa1818;
+  --btn-color-hover: hsl(0, 75%, 28%);
+  --btn-color-txt: #fff;
+  @include mix.btn-options;
 }
 
 /*Gray Button*/
 .gray-btn {
-  background: hsl(0, 0%, 59%);
-  &.init-btn, &.tag-btn {
-    color: #fff;
-    &:hover {
-      background: hsl(0, 0%, 49%);
-    }
-  }
-  &.t {
-    color: hsl(0, 0%, 59%);
-  }
+  --btn-color: #969696;
+  --btn-color-hover: hsl(0, 0%, 49%);
+  --btn-color-txt: #fff;
+  @include mix.btn-options;
+}
+
+/*Graywhite Button*/
+.graywhite-btn {
+  --btn-color: #f3f3f3;
+  --btn-color-hover: #f3f3f3;
+  --btn-color-txt: #fff;
+  @include mix.btn-options;
 }
 
 /*Pink Button*/
 .pink-btn {
-  background: rgb(245, 110, 110);
-  &.init-btn, &.tag-btn {
-    color: #fff;
-    &:hover {
-      background: hsl(0, 87%, 65%);
-    }
-  }
-  &.t {
-    color: rgb(245, 110, 110);
-  }
+  --btn-color: rgb(245, 110, 110);
+  --btn-color-hover: hsl(0, 87%, 65%);
+  --btn-color-txt: #fff;
+  @include mix.btn-options;
 }
 
 /*Orange Button*/
 .orange-btn {
-  background: hsl(27, 100%, 63%);
-  &.init-btn, &.tag-btn {
-    color: #333;
-    &:hover {
-      background: hsl(27, 100%, 58%);
-    }
-  }
-  &.t {
-    color: hsl(27, 100%, 63%);
-  }
+  --btn-color: hsl(27, 100%, 63%);
+  --btn-color-hover: hsl(27, 100%, 58%);
+  --btn-color-txt: #fff;
+  @include mix.btn-options;
 }
 
 .t,
