@@ -46,7 +46,7 @@
 // button options
 @mixin btn-options {
     background: var(--btn-color);
-    &.init-btn,
+    &.init-btn, 
     &.tag-btn {
         color: var(--btn-color-txt);
         &:not(.nh):hover {
@@ -59,11 +59,9 @@
     &.bdr-btn {
         background: none; 
         border: 1px solid var(--btn-color);
-        color: var(--btn-color);
         &:not(.nh):hover {
             background: none;
             border: 1px solid var(--btn-color-hover);
-            color: var(--btn-color-hover);
         }
     }
 } 

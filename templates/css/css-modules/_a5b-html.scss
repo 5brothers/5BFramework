@@ -1,8 +1,8 @@
 /* Commissioner Variable Font */
 @font-face {
   font-family: "Comissioner";
-  src: url("../../fonts/Commissioner-VariableFont_FLAR,VOLM,slnt,wght.ttf") format("truetype-variations"),
-       url("../../fonts/Commissioner-VariableFont_FLAR,VOLM,slnt,wght.ttf") format("truetype");
+  src: url("../fonts/Commissioner-Variable.ttf") format("truetype-variations"),
+       url("../fonts/Commissioner-Variable.ttf") format("truetype");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -17,7 +17,7 @@
   --inputPadding: 15px;
   --transit: 0.2s;
   --rootBdrs: 10px;
-}
+} 
 
 *,
 *:before, 
